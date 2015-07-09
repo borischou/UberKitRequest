@@ -11,10 +11,9 @@
 @interface UberRequest : NSObject
 
 @property (strong, nonatomic) NSString *accessToken;
-@property (strong, nonatomic) NSDictionary *parameters;
 
 typedef void (^RequestHandler) (NSDictionary *uberResponse, NSURLResponse *response, NSError *error);
 
--(void)getResponseFromRequestWithCompletionHandler:(RequestHandler)handler;
+-(void)getResponseFromRequestWithParameters:(NSDictionary *)params withCompletionHandler:(RequestHandler)handler;
 
 @end

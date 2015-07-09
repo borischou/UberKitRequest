@@ -17,7 +17,7 @@
 
 #pragma mark - Request
 
--(void)getResponseFromRequestWithCompletionHandler:(RequestHandler)handler
+-(void)getResponseFromRequestWithParameters:(NSDictionary *)params withCompletionHandler:(RequestHandler)handler
 {
     NSString *baseURL = @"https://sandbox-api.uber.com/v1";
     NSString *url = [NSString stringWithFormat:@"%@/requests", baseURL];
