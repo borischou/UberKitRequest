@@ -4,6 +4,7 @@ APIs for ordering Uber cars
 -(void)getResponseFromRequestWithCompletionHandler:(RequestHandler)handler;
 
 @property (strong, nonatomic) NSString *accessToken;
+
 @property (strong, nonatomic) NSDictionary *parameters;
 
 1. Make sure you registered Uber developer;
